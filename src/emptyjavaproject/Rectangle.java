@@ -11,8 +11,8 @@ package emptyjavaproject;
  */
 public class Rectangle {
 
-    private double width;
-    private double height;
+    double width;
+    double height;
 
     public Rectangle(double width, double height) {
         this.height = height;

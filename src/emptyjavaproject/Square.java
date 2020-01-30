@@ -11,4 +11,12 @@ package emptyjavaproject;
  */
 public class Square extends Rectangle {
 
+    public Square(double side) {
+        super(side, side);
+        width = side;
+        height = side;
+
+        System.out.println("New Square:" + side);
+
+    }
 }

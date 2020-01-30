@@ -9,13 +9,14 @@ package emptyjavaproject;
  *
  * @author paul.kline
  */
-public class Main {
+public class Runner {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Rectangle r = new Rectangle(5.0, 6.0);
+       Rectangle r = new Rectangle(53.0, 5.0);
+       Rectangle r2 = new Rectangle(6.0, 58.0);
        
     }
     
