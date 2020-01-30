@@ -17,15 +17,25 @@ public class Rectangle {
     public Rectangle(double width, double height) {
         this.height = height;
         this.width = width;
+
+        System.out.println("New Rectangle: " + width + "+" + height);
     }
-    
-    public double getArea(){
-    double area = (this.width * this.height);
-    return area;
-}
-    
-    public double getPerimeter(){
-        double perimeter = (2 * this.width + 2*this.height);
+
+    public double getWidth() {
+        return this.width;
+    }
+
+    public double getHeight() {
+        return this.height;
+    }
+
+    public double getArea() {
+        double area = (this.width * this.height);
+        return area;
+    }
+
+    public double getPerimeter() {
+        double perimeter = (2 * this.width + 2 * this.height);
         return perimeter;
     }
 }

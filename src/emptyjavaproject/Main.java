@@ -15,7 +15,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       Rectangle r = new Rectangle(5.0, 6.0);
+       
     }
     
 }

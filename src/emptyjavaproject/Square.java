@@ -9,6 +9,6 @@ package emptyjavaproject;
  *
  * @author mercy.daniels
  */
-public class Square {
-    
+public class Square extends Rectangle {
+
 }
