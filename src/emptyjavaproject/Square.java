@@ -19,4 +19,9 @@ public class Square extends Rectangle {
         System.out.println("New Square:" + side);
 
     }
+    @Override
+    public String toString(){
+       String squ = "square of " + height;
+       return squ;
+    }
 }

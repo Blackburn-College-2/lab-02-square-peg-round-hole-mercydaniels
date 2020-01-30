@@ -18,7 +18,7 @@ public class Rectangle {
         this.height = height;
         this.width = width;
 
-        System.out.println("New Rectangle: " + width + "+" + height);
+        System.out.println("New Rectangle: " + width + "x" + height);
     }
 
     public double getWidth() {
@@ -37,5 +37,10 @@ public class Rectangle {
     public double getPerimeter() {
         double perimeter = (2 * this.width + 2 * this.height);
         return perimeter;
+    }
+    
+    public String toString(){
+       String rec = "rectangle of " + height + " by " + width;
+       return rec;
     }
 }

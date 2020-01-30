@@ -17,7 +17,11 @@ public class Runner {
     public static void main(String[] args) {
        Rectangle r = new Rectangle(53.0, 5.0);
        Rectangle r2 = new Rectangle(6.0, 58.0);
+       Square squa = new Square(5.0);
+       Square squaw = new Square(6.0);
        
+        System.out.println(squa);
+        System.out.println(r);
     }
     
 }
