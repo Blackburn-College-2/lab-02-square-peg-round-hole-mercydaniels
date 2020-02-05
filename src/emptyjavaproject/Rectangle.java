@@ -13,11 +13,12 @@ public class Rectangle {
 
     double width;
     double height;
+    String unit;
 
-    public Rectangle(double width, double height) {
+    public Rectangle(double width, double height, String unit) {
         this.height = height;
         this.width = width;
-
+        this.unit = unit;
         System.out.println("New Rectangle: " + width + "x" + height);
     }
 
@@ -38,10 +39,13 @@ public class Rectangle {
         double perimeter = (2 * this.width + 2 * this.height);
         return perimeter;
     }
-    
+
     @Override
-    public String toString(){
-       String rec = "rectangle of " + height + " by " + width;
-       return rec;
+    public String toString() {
+        Measurement mesHeight = new Measurement(this.height, this.unit);
+        Measurement mesWidth = new Measurement(this.width, this.unit);
+        String both = "This Rectangle is " + mesHeight + " by " + mesWidth;
+        System.out.println(both);
+        return both;
     }
 }

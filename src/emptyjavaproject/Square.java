@@ -11,17 +11,27 @@ package emptyjavaproject;
  */
 public class Square extends Rectangle {
 
-    public Square(double side) {
-        super(side, side);
+    double side;
+
+    /**
+     * 
+     * @param side
+     * @param unit 
+     */
+    public Square(double side, String unit) {
+        super(side, side, unit);
+        this.side = side;
         width = side;
         height = side;
 
-        System.out.println("New Square:" + side);
-
+         System.out.println("New Square:" + side);
     }
+
     @Override
-    public String toString(){
-       String squ = "square of " + height;
-       return squ;
+    public String toString() {
+        Measurement mesSide = new Measurement(this.side, this.unit);
+        String printMes =  " "+ mesSide;
+        System.out.println( "This Square is" + printMes);
+        return printMes;
     }
 }

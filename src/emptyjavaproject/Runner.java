@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Time Estimate: 2 hours
+ * Time:
  */
 package emptyjavaproject;
 
@@ -15,13 +14,15 @@ public class Runner {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Rectangle r = new Rectangle(53.0, 5.0);
-       Rectangle r2 = new Rectangle(6.0, 58.0);
-       Square squa = new Square(5.0);
-       Square squaw = new Square(6.0);
-       
-        System.out.println(squa);
-        System.out.println(r);
+       Rectangle r = new Rectangle(53.0, 5.0, "yards");
+       Rectangle r2 = new Rectangle(6.0, 58.0, "meters");
+       Square squa = new Square(5.0, "dollars");
+       Square squaw = new Square(6.0, "feet");
+        
+       r.toString();
+       r2.toString();
+       squa.toString();
+       squaw.toString();
     }
     
 }
