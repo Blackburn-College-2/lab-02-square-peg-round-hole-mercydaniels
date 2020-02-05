@@ -39,6 +39,7 @@ public class Rectangle {
         return perimeter;
     }
     
+    @Override
     public String toString(){
        String rec = "rectangle of " + height + " by " + width;
        return rec;
