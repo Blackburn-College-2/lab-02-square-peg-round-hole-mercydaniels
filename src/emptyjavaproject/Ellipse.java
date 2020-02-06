@@ -23,8 +23,8 @@ public class Ellipse {
     }
 
     /**
-     *
-     * @return
+     *  Calculates the perimeter of the ellipse
+     * @returns the perimeter of the ellipse
      */
     public Measurement getPerimeter() {
 
@@ -34,13 +34,19 @@ public class Ellipse {
         Measurement m = new Measurement(p, unit);
         return m;
     }
-
+/**
+ * Calculates the area of the ellipse
+ * @return 
+ */
     public Measurement getArea() {
         double a = Math.PI * radiusV * radiusH;
         Measurement m = new Measurement(a, unit);
         return m;
     }
-
+/**
+ * Uses the area and perimeter to calculate the efficiency of the ellipse
+ * @return 
+ */
     public double getEfficiency() {
         double underSqRoot = (Math.pow(radiusV, 2) + Math.pow(radiusH, 2)) / 2;
         double squareRoot = Math.sqrt(underSqRoot);

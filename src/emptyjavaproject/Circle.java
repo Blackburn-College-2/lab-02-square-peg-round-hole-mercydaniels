@@ -23,6 +23,9 @@ public class Circle extends Ellipse {
     }
     
     @Override
+    /**
+     * Overrides getArea of ellipse to properly calculate the area of the cirle
+     */
     public Measurement getArea(){
         double a = Math.PI * Math.pow(radius,2);
         Measurement m = new Measurement(a, unit);
@@ -30,6 +33,9 @@ public class Circle extends Ellipse {
     }
     
     @Override
+    /**
+     * Overrides getPerimeter in ellipse to calculate the perimeter of circle
+     */
     public Measurement getPerimeter(){
         double p = 2 * Math.PI * radius;
         Measurement m = new Measurement(p, unit);
