@@ -14,11 +14,6 @@ public class Square extends Rectangle {
     private double side;
     private String unit;
     
-    /**
-     * 
-     * @param side
-     * @param unit 
-     */
     public Square(double side, String unit) {
         super(side, side, unit);
         this.side = side;
@@ -28,6 +23,9 @@ public class Square extends Rectangle {
     }
 
     @Override
+    /**
+     * Overrides toString to print out the square measurements
+     */
     public String toString() {
         Measurement mesSide = new Measurement(this.side, this.unit);
         String printMes =  " "+ mesSide;

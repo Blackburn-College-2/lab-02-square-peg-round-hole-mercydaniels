@@ -15,6 +15,9 @@ public class Measurement {
     }
     
     @Override
+    /**
+     * Overrides toString to print out measurements
+     */
   public String toString(){
       String valueUnit = "" + value + unit;
         

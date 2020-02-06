@@ -6,12 +6,12 @@
 package emptyjavaproject;
 
 /**
- *
+ * This is a blueprint for a rectangle
  * @author mercy.daniels
  */
 public class Rectangle {
 
-     private double width;
+    private double width;
     private double height;
     private String unit;
 
@@ -22,25 +22,46 @@ public class Rectangle {
         System.out.println("New Rectangle: " + width + "x" + height);
     }
 
+    /**
+     *
+     * @return returns the width of the rectangle
+     */
     public double getWidth() {
         return this.width;
     }
 
+    /**
+     *
+     * @return returns the height of the rectangle
+     */
     public double getHeight() {
         return this.height;
     }
 
+    /**
+     * Uses getHeight and getWidth to calculate the area of the rectangle
+     *
+     * @return area as a double
+     */
     public double getArea() {
         double area = (this.width * this.height);
         return area;
     }
 
+    /**
+     * Uses getHeight and getWidth to calculate the perimeter of the rectangle
+     *
+     * @return perimeter as a double
+     */
     public double getPerimeter() {
         double perimeter = (2 * this.width + 2 * this.height);
         return perimeter;
     }
 
     @Override
+    /**
+     * Overrides toString to print out the rectangle measurements
+     */
     public String toString() {
         Measurement mesHeight = new Measurement(this.height, this.unit);
         Measurement mesWidth = new Measurement(this.width, this.unit);
@@ -48,9 +69,9 @@ public class Rectangle {
         System.out.println(both);
         return both;
     }
-    
-    public double getEffiency(){
-        double math = getArea()/getPerimeter();
+
+    public double getEffiency() {
+        double math = getArea() / getPerimeter();
         return math;
     }
 }
