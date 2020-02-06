@@ -1,6 +1,6 @@
 /*
  * Time Estimate: 2 hours
- * Time:
+ * Time: 4 hours
  */
 package emptyjavaproject;
 
