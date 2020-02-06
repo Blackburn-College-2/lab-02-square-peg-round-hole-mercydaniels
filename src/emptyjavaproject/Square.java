@@ -11,8 +11,9 @@ package emptyjavaproject;
  */
 public class Square extends Rectangle {
 
-    double side;
-
+    private double side;
+    private String unit;
+    
     /**
      * 
      * @param side
@@ -21,8 +22,7 @@ public class Square extends Rectangle {
     public Square(double side, String unit) {
         super(side, side, unit);
         this.side = side;
-        width = side;
-        height = side;
+        this.unit = unit;
 
          System.out.println("New Square:" + side);
     }

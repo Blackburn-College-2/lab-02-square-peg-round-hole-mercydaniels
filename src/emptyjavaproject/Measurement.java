@@ -6,7 +6,7 @@ package emptyjavaproject;
  * @author mercy.daniels
  */
 public class Measurement {
-    double value = 0.0;
+    private double value = 0.0;
     String unit = "units";
     
     public Measurement(double value, String unit){

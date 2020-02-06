@@ -11,9 +11,9 @@ package emptyjavaproject;
  */
 public class Rectangle {
 
-    double width;
-    double height;
-    String unit;
+     private double width;
+    private double height;
+    private String unit;
 
     public Rectangle(double width, double height, String unit) {
         this.height = height;
@@ -47,5 +47,10 @@ public class Rectangle {
         String both = "This Rectangle is " + mesHeight + " by " + mesWidth;
         System.out.println(both);
         return both;
+    }
+    
+    public double getEffiency(){
+        double math = getArea()/getPerimeter();
+        return math;
     }
 }
